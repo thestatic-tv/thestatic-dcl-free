@@ -1,0 +1,47 @@
+{
+  "display": {
+    "title": "TheStatic.tv FREE Template",
+    "description": "FREE tier template - visitor tracking and session metrics for your Decentraland scene. Upgrade to STANDARD for video streaming and Guide UI.",
+    "navmapThumbnail": "images/scene-thumbnail.png",
+    "favicon": "favicon_asset"
+  },
+  "owner": "",
+  "contact": {
+    "name": "TheStatic.tv",
+    "email": "contact@thestatic.tv"
+  },
+  "main": "bin/index.js",
+  "runtimeVersion": "7",
+  "tags": [
+    "thestatic",
+    "free-tier",
+    "analytics",
+    "visitor-tracking",
+    "metrics",
+    "session-tracking"
+  ],
+  "scene": {
+    "parcels": ["0,0"],
+    "base": "0,0"
+  },
+  "spawnPoints": [
+    {
+      "name": "main",
+      "default": true,
+      "position": {
+        "x": 8,
+        "y": 0.1,
+        "z": 12
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 2,
+        "z": 4
+      }
+    }
+  ],
+  "requiredPermissions": [
+    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+  ],
+  "featureToggles": {}
+}
