@@ -21,7 +21,7 @@ export let staticTV: StaticTVClient
 
 // ===========================================================================
 //                     thestatic.tv - FREE Tier
-//           Get your key: https://thestatic.tv/dashboard
+//           Get your key: https://thestatic.tv
 // ===========================================================================
 
 

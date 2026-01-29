@@ -22,7 +22,7 @@ The scene works immediately for testing - no setup required!
 
 ## Use Your Own Key
 
-1. Get a key at [thestatic.tv/dashboard](https://thestatic.tv/dashboard)
+1. Get a key at [thestatic.tv/admin/login](https://thestatic.tv/admin/login)
 2. Open `src/index.ts` and replace `dcls_YOUR_KEY_HERE` with your key
 3. Delete `DELETE_THIS_DEMO.ts` (it's just for the demo scene)
 
@@ -79,6 +79,6 @@ Check out these other templates:
 
 ## Resources
 
-- [Get API Key](https://thestatic.tv/dashboard)
+- [Get API Key](https://thestatic.tv/admin/login)
 - [SDK on npm](https://www.npmjs.com/package/@thestatic-tv/dcl-sdk)
-- [TheStatic.tv](https://thestatic.tv)
+- [thestatic.tv](https://thestatic.tv)

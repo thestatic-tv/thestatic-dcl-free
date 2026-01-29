@@ -56,7 +56,6 @@ const decodeDemoKey = (): string => {
 
 export const getDemoKey = (userKey: string): string => {
   if (userKey && !userKey.includes('your_key') && !userKey.includes('YOUR_')) return userKey
-  console.log('[TheStatic.tv] Using demo key - get your own at thestatic.tv/dashboard')
   return decodeDemoKey()
 }
 
@@ -116,7 +115,7 @@ Transform.create(dashboardButtonText, { position: Vector3.create(6, 1.8, 13.75) 
 TextShape.create(dashboardButtonText, { text: 'GET API KEY', fontSize: 1.5, textColor: COLORS.darkPanel, width: 10 })
 pointerEventsSystem.onPointerDown(
   { entity: dashboardButton, opts: { button: InputAction.IA_POINTER, hoverText: 'Get your API key' } },
-  () => { openExternalUrl({ url: 'https://thestatic.tv/dashboard' }) }
+  () => { openExternalUrl({ url: 'https://thestatic.tv/admin/login' }) }
 )
 
 const githubButton = engine.addEntity()
@@ -199,11 +198,10 @@ engine.addSystem((dt: number) => {
     emissiveColor: isActive ? COLORS.greenGlow : COLORS.redGlow,
     emissiveIntensity: 4
   })
-  TextShape.getMutable(modeValue).text = staticTV.isLite ? 'FREE' : 'STANDARD'
-  TextShape.getMutable(modeValue).textColor = staticTV.isLite ? COLORS.yellow : COLORS.cyan
+  TextShape.getMutable(modeValue).text = staticTV.isFree ? 'FREE' : 'STANDARD'
+  TextShape.getMutable(modeValue).textColor = staticTV.isFree ? COLORS.yellow : COLORS.cyan
   const mins = Math.floor(sessionTime / 60)
   const secs = Math.floor(sessionTime % 60)
   TextShape.getMutable(timeValue).text = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
 })
 
-console.log('[Demo] FREE tier scene loaded')
