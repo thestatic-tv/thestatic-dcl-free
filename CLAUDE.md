@@ -1,4 +1,4 @@
-# thestatic-dcl-free — AI Session Entry
+# thestatic-dcl-free - AI Session Entry
 
 ## What this is
 
@@ -26,7 +26,7 @@ npm run deploy:test    # Test world
 
 ## Key file
 
-`src/index.ts` — Initialize the SDK with a FREE tier key (`dcls_*` prefix):
+`src/index.ts` - Initialize the SDK with a FREE tier key (`dcls_*` prefix):
 
 ```typescript
 staticTV = new StaticTVClient({ apiKey: 'dcls_YOUR_KEY_HERE' })
@@ -38,7 +38,7 @@ Get a key at [thestatic.tv/dashboard](https://thestatic.tv/dashboard).
 
 | Tier | Key prefix | Features |
 |------|-----------|---------|
-| **Free** | `dcls_*` | Visitor tracking only — **this template** |
+| **Free** | `dcls_*` | Visitor tracking only - **this template** |
 | Standard | `dcls_*` | + Video screen, Guide UI, Chat |
 | Pro | `dclk_*` | + Admin Panel |
 
@@ -46,5 +46,5 @@ See `thestatic-dcl-standard` and `thestatic-dcl-pro` for the other tiers.
 
 ## Cross-repo dependencies
 
-- `thestatic-dcl-sdk` — publishes `@thestatic-tv/dcl-sdk` to npm
-- `thestatic-tv` — backend API this scene talks to
+- `thestatic-dcl-sdk` - publishes `@thestatic-tv/dcl-sdk` to npm
+- `thestatic-tv` - backend API this scene talks to
