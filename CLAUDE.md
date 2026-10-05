@@ -40,7 +40,7 @@ Get a key at [thestatic.tv/dashboard](https://thestatic.tv/dashboard).
 |------|-----------|---------|
 | **Free** | `dcls_*` | Visitor tracking only - **this template** |
 | Standard | `dcls_*` | + Video screen, Guide UI, Chat |
-| Pro | `dclk_*` | + Admin Panel |
+| Pro | `dcls_*` | + Admin Panel |
 
 See `thestatic-dcl-standard` and `thestatic-dcl-pro` for the other tiers.
 
